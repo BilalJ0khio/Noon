@@ -164,9 +164,9 @@ li.line {
   font-weight: 600;
 }
 
-.header-section-secondary-nav [name] {
+/* .header-section-secondary-nav [name] {
   font-size: 2.3rem;
-}
+} */
 
 .category-container {
   display: flex;
@@ -1048,7 +1048,7 @@ body {
 }
 
 .icon {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .connect-store-container.gap {
@@ -1123,5 +1123,9 @@ body {
 }
 
 .display {
+  display: none;
+}
+
+.add {
   display: none;
 }

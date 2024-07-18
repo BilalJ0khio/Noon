@@ -99,6 +99,7 @@
   }
 
   .add {
+    display: initial;
     font-size: 2rem;
     color: #888;
   }
