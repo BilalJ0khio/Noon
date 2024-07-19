@@ -61,6 +61,7 @@
   }
   .mobile-card {
     width: 18.7rem;
+    position: relative;
   }
   .mobile-item-description {
     font-size: 1.3rem;

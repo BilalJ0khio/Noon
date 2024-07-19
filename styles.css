@@ -514,6 +514,7 @@ figure {
   background-color: #fff;
   width: 22.3rem;
   flex-shrink: 0;
+  position: relative;
 }
 
 .mobile-card-img-container {
@@ -706,6 +707,8 @@ figure {
   position: relative;
   margin-bottom: 1rem;
   left: -10px;
+  visibility: visible;
+  opacity: 1;
 }
 
 .mobile-time::after {
@@ -1204,4 +1207,146 @@ body {
   opacity: 1;
   /* pointer-events: all; */
   transform: translateY(0px);
+}
+
+/*  */
+
+.mobile-card {
+  /* border: 2px solid orange; */
+}
+
+.main-content {
+  background-color: rgba(51, 51, 51, 0.142);
+  background-color: white;
+  /* border: 1px solid black; */
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  transition: all 300ms ease 0s;
+  /* transition: all 300s; */
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: 100000;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+.up-content {
+  bottom: 0px;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.a1 {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px 0px;
+  padding: 10px 6px;
+  border-radius: 10px;
+  background-color: rgb(249, 249, 249);
+}
+
+.rocket-img-container {
+  display: flex;
+  align-items: stretch;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    324deg,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(254, 238, 0, 1) 100%
+  );
+  border-radius: 10000px;
+  margin-top: 0.5rem;
+
+  display: flex;
+}
+
+.small1 {
+  font-size: 1.2rem;
+  font-style: italic;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px;
+}
+
+.aa {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.m-t {
+  margin-top: 1.2rem;
+}
+
+.dark {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 90;
+  transition: all 200ms;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  border-radius: 0.8rem;
+  bottom: -10px;
+}
+
+.dark-off {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  bottom: 0;
+}
+
+.back-logo-container {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.back-logo-round {
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10000px;
+}
+
+.bb {
+  font-size: 2rem;
+  color: #999;
+}
+
+.back-link:link,
+.back-link:visited {
+  color: white;
+  font-size: 1.8rem;
+  pointer-events: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.time-none {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
 }
