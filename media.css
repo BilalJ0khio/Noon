@@ -210,6 +210,15 @@
   .small-screen-nav-section {
     display: block;
   }
+  .dark,
+  .main-content {
+    display: none;
+  }
+
+  .time-none {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 @media only screen and (max-width: 768px) {
